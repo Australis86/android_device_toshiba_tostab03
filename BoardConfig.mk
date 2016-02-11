@@ -61,7 +61,7 @@ BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 
 # TWRP
-DEVICE_RESOLUTION = 1280x800
+DEVICE_RESOLUTION := 1280x800
 RECOVERY_SDCARD_ON_DATA := true # This enables proper handling of /data/media on devices that have this folder for storage (most Honeycomb and devices that originally shipped with ICS like Galaxy Nexus)
 #BOARD_HAS_NO_REAL_SDCARD := true # Disables things like sdcard partitioning and may save you some space if TWRP isn't fitting in your recovery patition
 TW_NO_REBOOT_BOOTLOADER := true # Removes the reboot bootloader button from the reboot menu

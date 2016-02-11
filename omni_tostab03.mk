@@ -4,7 +4,7 @@
 
 # Recovery
 PRODUCT_COPY_FILES += \
-	 $(LOCAL_PATH)/device/toshiba/tostab03/twrp.fstab:recovery/root/etc/twrp.fstab
+	 $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # Product details
 PRODUCT_NAME := omni_tostab03

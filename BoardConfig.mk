@@ -17,7 +17,7 @@ BOARD_KERNEL_PAGESIZE :=
 TARGET_PREBUILT_KERNEL := device/toshiba/tostab03/kernel
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/toshiba/tostab03/recovery/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/toshiba/tostab03/recovery.fstab
 
 # Partitions
 # Need to confirm recovery image partition size

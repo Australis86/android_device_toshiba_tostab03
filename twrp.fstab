@@ -1,0 +1,9 @@
+# mount point    fstype        device											# device 2					# flags
+/recovery       emmc            /dev/block/platform/sdhci-tegra.3/by-num/p1
+/boot           emmc            /dev/block/platform/sdhci-tegra.3/by-num/p2									flags=display="Boot";backup=1
+/system         ext4            /dev/block/platform/sdhci-tegra.3/by-num/p3									flags=display="System";backup=1
+/cache          ext4            /dev/block/platform/sdhci-tegra.3/by-num/p4									flags=display="Cache";backup=1;wipeingui;wipeduringfactoryreset
+/misc           emmc            /dev/block/platform/sdhci-tegra.3/by-num/p5
+/staging        emmc            /dev/block/platform/sdhci-tegra.3/by-num/p6
+/data           ext4            /dev/block/platform/sdhci-tegra.3/by-num/p7									flags=display="Data";backup=1;wipeingui
+/sdcard         vfat            /dev/block/mmcblk1p1							/dev/block/mmcblk1          flags=display="External Storage";removable;storage;wipeingui

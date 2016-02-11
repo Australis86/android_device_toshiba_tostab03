@@ -20,6 +20,7 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 
 # Prebuilt Kernel Fallback
 TARGET_PREBUILT_KERNEL := device/toshiba/tostab03/kernel
+TARGET_PREBUILT_RECOVERY_KERNEL := device/toshiba/tostab03/kernel
 
 # Kernel
 BOARD_KERNEL_CMDLINE := nvmem=128M@384M mem=1024M@0M vmalloc=256M video=tegrafb tegra_fbmem=0x3e8a00@0x1fbfa000 console=ttyS0,115200n8 debug_uartport=hsport usbcore.old_scheme_first=1 lp0_vec=8192@0x1fbee000 tegraboot=sdmmc board_info=4249:ff41:ff:ff:54 gpt androidboot.carrier=wifi-only

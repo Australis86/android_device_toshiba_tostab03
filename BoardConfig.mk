@@ -35,7 +35,7 @@ BOARD_KERNEL_CMDLINE := nvmem=128M@384M mem=1024M@0M vmalloc=256M video=tegrafb 
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 4096
 TARGET_KERNEL_SOURCE := kernel/toshiba/tostab03
-TARGET_KERNEL_CONFIG := kernel/toshiba/tostab03/arch/arm/configs/omni_tostab03_defconfig
+TARGET_KERNEL_CONFIG := omni_tostab03_defconfig
 
 # Prebuilt Kernel Fallback
 # Falls back to these kernels if kernel compilation fails

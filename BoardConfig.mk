@@ -21,10 +21,10 @@ TARGET_BOOTLOADER_BOARD_NAME := antares
 TARGET_NO_BOOTLOADER := true
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
-TARGET_CPU_VARIANT := cortex-a9 # OmniROM
+TARGET_CPU_VARIANT := cortex-a9
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a
-TARGET_ARCH_VARIANT_CPU := cortex-a9 # CyanogenMod
+TARGET_ARCH_VARIANT_CPU := cortex-a9
 TARGET_ARCH_VARIANT_FPU := vfpv3-d16
 TARGET_GET_CPU_SMP := true
 TARGET_OTA_ASSERT_DEVICE := antares,tostab03
@@ -73,13 +73,13 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 734003200
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 3221225472
 
 # Recovery Options
-BOARD_HAS_NO_SELECT_BUTTON := true # This enables the power button to be used to select options if your device has no select button
+BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 
 # TWRP
 DEVICE_RESOLUTION := 1280x800
-RECOVERY_SDCARD_ON_DATA := true # This enables proper handling of /data/media on devices that have this folder for storage (most Honeycomb and devices that originally shipped with ICS like Galaxy Nexus)
-#BOARD_HAS_NO_REAL_SDCARD := true # Disables things like sdcard partitioning and may save you some space if TWRP isn't fitting in your recovery patition
-TW_NO_REBOOT_BOOTLOADER := true # Removes the reboot bootloader button from the reboot menu
-#TW_DEFAULT_EXTERNAL_STORAGE := true # Defaults to external storage instead of internal on dual storage devices (largely deprecated)
+RECOVERY_SDCARD_ON_DATA := true
+#BOARD_HAS_NO_REAL_SDCARD := true
+TW_NO_REBOOT_BOOTLOADER := true
+#TW_DEFAULT_EXTERNAL_STORAGE := true

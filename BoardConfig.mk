@@ -40,7 +40,9 @@ TARGET_KERNEL_CONFIG := omni_tostab03_defconfig
 # Prebuilt Kernel Fallback
 # Falls back to these kernels if kernel compilation fails
 TARGET_PREBUILT_KERNEL := device/toshiba/tostab03/kernel
-TARGET_PREBUILT_RECOVERY_KERNEL := device/toshiba/tostab03/kernel
+
+# Forces uses of prebuilt kernel instead of compiled kernel
+#TARGET_PREBUILT_RECOVERY_KERNEL := device/toshiba/tostab03/kernel
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/toshiba/tostab03/recovery.fstab
@@ -69,7 +71,8 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 # Partitions
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 6291456
+#BOARD_RECOVERYIMAGE_PARTITION_SIZE := 6291456 Note that due to the way the recovery build calculates this size, it needs to be smaller! See below.
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 6100805
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 734003200
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 3221225472
 BOARD_FLASH_BLOCK_SIZE := 1024

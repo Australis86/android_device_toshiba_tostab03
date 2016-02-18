@@ -42,6 +42,7 @@ TARGET_KERNEL_CONFIG := omni_tostab03_defconfig
 TARGET_PREBUILT_KERNEL := device/toshiba/tostab03/kernel
 
 # Forces uses of prebuilt kernel instead of compiled kernel
+# Temporarily disabled while recovery kernel is prepared
 #TARGET_PREBUILT_RECOVERY_KERNEL := device/toshiba/tostab03/kernel
 
 # Recovery
@@ -71,7 +72,8 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 # Partitions
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
-#BOARD_RECOVERYIMAGE_PARTITION_SIZE := 6291456 Note that due to the way the recovery build calculates this size, it needs to be smaller! See below.
+# Technically the recovery partition is 6291456. However, the build process assumes a spare page, so 
+# the number here actually needs to be smaller.
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 6100805
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 734003200
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 3221225472
@@ -85,7 +87,7 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 
 # TWRP
 DEVICE_RESOLUTION := 1280x800
-BOARD_HAS_NO_REAL_SDCARD := true
+#BOARD_HAS_NO_REAL_SDCARD := true # Removes SD-card partitioning (to save space if needed)
 RECOVERY_SDCARD_ON_DATA := true
 TW_NO_REBOOT_BOOTLOADER := true
 TW_INTERNAL_STORAGE_PATH := "/data/media"

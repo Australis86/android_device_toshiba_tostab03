@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+# Inherit common OmniROM components
+$(call inherit-product, build/target/product/full_base.mk)
+$(call inherit-product, vendor/omni/config/common_tablet.mk)
+
 # PRODUCT DETAILS
 # See http://source.android.com/source/add-device.html#prod-def for full details
 

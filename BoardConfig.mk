@@ -16,7 +16,6 @@
 
 # Platform
 TARGET_BOARD_PLATFORM := tegra
-#TARGET_TEGRA_VERSION := t20 # Not used?
 TARGET_BOOTLOADER_BOARD_NAME := antares
 TARGET_NO_BOOTLOADER := true
 TARGET_CPU_ABI := armeabi-v7a
@@ -36,10 +35,10 @@ TARGET_KERNEL_CONFIG := omni_tostab03_defconfig
 
 # Prebuilt Kernel Fallback
 # Falls back to these kernels if kernel compilation fails
-TARGET_PREBUILT_KERNEL := device/toshiba/tostab03/kernel
+#TARGET_PREBUILT_KERNEL := device/toshiba/tostab03/kernel
 
 # Forces uses of prebuilt kernel instead of compiled kernel
-TARGET_PREBUILT_RECOVERY_KERNEL := device/toshiba/tostab03/recovery/kernel
+#TARGET_PREBUILT_RECOVERY_KERNEL := device/toshiba/tostab03/recovery/kernel
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/toshiba/tostab03/recovery.fstab
@@ -79,7 +78,7 @@ BOARD_FLASH_BLOCK_SIZE := 1024
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_LARGE_FILESYSTEM := true
-TARGET_RECOVERY_INITRC := device/toshiba/tostab03/recovery/init.rc
+#TARGET_RECOVERY_INITRC := device/toshiba/tostab03/recovery/init.rc
 
 # TWRP
 DEVICE_RESOLUTION := 1280x800

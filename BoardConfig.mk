@@ -38,26 +38,26 @@ TARGET_KERNEL_CONFIG := omni_tostab03_defconfig
 TARGET_PREBUILT_KERNEL := device/toshiba/tostab03/kernel
 
 # Forces uses of prebuilt kernel instead of compiled kernel
-#TARGET_PREBUILT_RECOVERY_KERNEL := device/toshiba/tostab03/recovery/kernel
+TARGET_PREBUILT_RECOVERY_KERNEL := device/toshiba/tostab03/recovery/kernel
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/toshiba/tostab03/recovery.fstab
 
 # Display
-#USE_OPENGL_RENDERER := true
+USE_OPENGL_RENDERER := true
 
 # Audio
 BOARD_USES_GENERIC_AUDIO := true
 
 # GPS
-#BOARD_HAVE_GPS := true
+BOARD_HAVE_GPS := true
 
 # Camera
 # TBA
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
-#BOARD_HAVE_BLUETOOTH_BCM := true
+BOARD_HAVE_BLUETOOTH_BCM := true
 
 # USB
 # TBA
@@ -73,12 +73,11 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 6100805
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 734003200
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 3221225472
 BOARD_FLASH_BLOCK_SIZE := 1024
-#BOARD_VOLD_MAX_PARTITIONS := 8
 
 # Recovery Options
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_NO_MISC_PARTITION := true
-#BOARD_HAS_LARGE_FILESYSTEM := true # Not used in TWRP?
+BOARD_HAS_LARGE_FILESYSTEM := true
 
 # TWRP
 DEVICE_RESOLUTION := 1280x800

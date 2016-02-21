@@ -14,14 +14,19 @@
 # limitations under the License.
 #
 
-# Product details
+# PRODUCT DETAILS
 # See http://source.android.com/source/add-device.html#prod-def for full details
-PRODUCT_NAME := omni_tostab03 # End name for the product - appears in Settings > About
+
+# End name for the product - appears in Settings > About
+PRODUCT_NAME := omni_tostab03
 PRODUCT_DEVICE := tostab03
 PRODUCT_MODEL := AT100
 PRODUCT_BRAND := toshiba
 PRODUCT_MANUFACTURER := Toshiba
-PRODUCT_LOCALES := en_AU en_GB en_US # Space-separated list of two-character language and country codes; first listed is used as product's locale
 
+# Space-separated list of two-character language and country codes; first listed is used as product's locale
+PRODUCT_LOCALES := en_AU en_GB en_US
+
+# TWRP fstab file (checks if this exists, otherwise falls back to recovery.fstab)
 PRODUCT_COPY_FILES += \
-	 $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab
+     $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab

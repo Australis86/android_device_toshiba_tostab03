@@ -89,7 +89,7 @@ BOARD_FLASH_BLOCK_SIZE := 1024
 # Forces uses of prebuilt kernel instead of compiled kernel
 #TARGET_PREBUILT_RECOVERY_KERNEL := device/toshiba/tostab03/recovery/kernel
 # Path to custom init.rc for recovery
-#TARGET_RECOVERY_INITRC := device/toshiba/tostab03/recovery/init.rc
+TARGET_RECOVERY_INITRC := device/toshiba/tostab03/recovery/init.rc
 # Path to custom fstab for recovery
 TARGET_RECOVERY_FSTAB := device/toshiba/tostab03/recovery/recovery.fstab
 # No select button - use power button instead

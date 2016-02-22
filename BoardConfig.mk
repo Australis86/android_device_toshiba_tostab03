@@ -91,7 +91,7 @@ BOARD_FLASH_BLOCK_SIZE := 1024
 # Path to custom init.rc for recovery
 #TARGET_RECOVERY_INITRC := device/toshiba/tostab03/recovery/init.rc
 # Path to custom fstab for recovery
-TARGET_RECOVERY_FSTAB := device/toshiba/tostab03/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/toshiba/tostab03/recovery/recovery.fstab
 # No select button - use power button instead
 BOARD_HAS_NO_SELECT_BUTTON := true
 # No misc partition

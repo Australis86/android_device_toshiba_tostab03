@@ -35,7 +35,7 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 
 # KERNEL
 # Address of the kernel within the boot and recovery images
-BOARD_KERNEL_BASE := 0x08000000
+BOARD_KERNEL_BASE := 0x10000000
 # Page size of the stock boot.img and must be set correctly in order to boot - can be extracted from kernel source
 BOARD_KERNEL_PAGESIZE := 4096
 # Path to the kernel source

@@ -112,7 +112,7 @@ TW_NO_REBOOT_BOOTLOADER := true
 TW_DEFAULT_EXTERNAL_STORAGE := true
 # Flashes zips from their location rather than copying them into /tmp (useful for ROMs that are too large to fit into RAM)
 TW_FLASH_FROM_STORAGE := true
-# Mount paths
+# Mount paths for dual storage devices - interval and "external" (note that actual SD cards will probably show up as sdcard2 when mounted)
 TW_INTERNAL_STORAGE_PATH := "/data/media"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
 TW_EXTERNAL_STORAGE_PATH := "/sdcard"

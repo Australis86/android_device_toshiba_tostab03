@@ -22,3 +22,4 @@
 # function: add_lunch_combo generic-eng
 
 add_lunch_combo omni_tostab03-userdebug
+add_lunch_combo omni_tostab03-eng
